@@ -1,9 +1,15 @@
 # imgtov
-Images to video converter. 
+Imgtov (**im**a**g**es **to** **v**ideo converter) creates a video file from a set of images, audio file and text file describing when and what image to display.
 
-Install ffmpeg and imagemagick:
+### Installation ###
 
-sudo apt-get install ffmpeg imagemagick
+The tool uses ffmpeg and imagemagick:
+
+```sudo apt-get install ffmpeg imagemagick```
+
+### How to run ### 
+
+Put your timestamps in input.txt (format below). Set the desired image_size for conversion, which sets the quality of the video, and audio_track file name. Put the image files in the images directory. Put the audio file in the root. Run imgtov.py. As a result, you should get video.mp4.
 
 input.txt example: 
 
