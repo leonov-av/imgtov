@@ -99,7 +99,7 @@ def check_create_processed_images(raw_images_set, raw_dir_name, processed_dir_na
             print(str(n) + "/" + str(len(raw_images_list))+ ". " + processed_file_path + " - file does NOT exist")
             print("Creating...")
 
-            command = "convert -resize 7680X4320 -background black -gravity center -extent 7680X4320 '" + \
+            command = "convert -resize " + image_size + " -background black -gravity center -extent " + image_size + " '" + \
               raw_file_path + "' '" + processed_file_path + "'"
             print(command)
             print("Created!")
